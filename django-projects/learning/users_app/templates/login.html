@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+ <title>Login</title>
+{% endblock title %}
+
+{% block content %}
+
+    <div class="site-wrapper">
+
+        <!-- page breacrumb -->
+        <section>
+            <div class="banner">
+                <div class="header-text mb-0">
+                    <div class="container">
+                        <div class="text-center text-white">
+                            <h1>Login</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./ page breacrumb -->
+
+        <!-- page header -->
+        <section class="section">
+            <div class="container-fluid pt-20">
+                <div class="row">
+                    <div class="register-page">
+                        <div class="col-lg-5 col-xl-4 col-md-6 d-block mx-auto">
+                            <div class="wrapper wrapper2">
+                                <form method="post" class="card-body">
+                                    {% csrf_token %}
+                                    <h3>Login</h3>
+                                    <div class="mail">
+                                        <input type="email" id="email" name="email">
+                                        <label for="email">{{ form.email }}</label>
+                                    </div>
+                                    <div class="password">
+                                        <input type="password" id="password" name="password">
+                                        <label for="password">{{form.Password}}</label>
+                                    </div>
+                                    <div class="submit">
+                                        <button class="btn btn-primary btn-block">Login</button>
+                                    </div>
+                                    <p class="text-dark mb-0">
+                                        <a href="{% url 'forgot' %}" >Forgot Password</a>
+                                    </p>
+                                    <p class="text-dark mb-0">
+                                        Don't have an account <a href="{% url 'register' %}" >Register</a>
+                                    </p>
+                                </form>
+                                <hr class="divider">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <div class="btn-group">
+                                            <a href="#" class="btn btn-icon mr-2 brround">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-icon mr-2 brround">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./ page header -->
+
+        <!-- wrapper -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                </div>
+            </div>
+        </div>
+        <!-- ./ wrapper -->
+
+ {% endblock content %}

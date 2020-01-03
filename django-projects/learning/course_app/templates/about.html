@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+ {% block title %}
+ <title> About Us </title>
+{% endblock title %}
+
+{% block content %}
+     <!-- wrapper -->
+        <section class="page-name background-bg" data-image-src="{% static 'images/breadcrumb.jpg' %}" style="background-image: url({% static 'images/breadcrumb.jpg' %})">
+            <div class="overlay">
+                <div class="section-padding">
+                    <div class="container">
+                        <h2 class="section-title">About Us</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us text-center">
+            <div class="section-padding">
+                <div class="container">
+                    <div class="top-content">
+                        <h3 class="section-title">About Us</h3>
+                        <p>Be unique</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat mollitia nesciunt! Quasi expedita molestias quae incidunt aliquid voluptas tempore doloremque! Dolorum expedita quia sapiente. Beatae mollitia alias illo nostrum?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima culpa quae neque exercitationem ad ducimus? Maiores, inventore rerum magni commodi dolor laborum corporis nostrum vero temporibus asperiores minima sint eos?</p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="section-title">Our Mission</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit voluptatibus repellendus illum natus obcaecati quisquam voluptatum nemo aut, dolorum aliquam et reprehenderit sequi nobis optio porro. Doloribus, vero vitae.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="section-title">Our Vision</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur suscipit voluptatibus repellendus illum natus obcaecati quisquam voluptatum nemo aut, dolorum aliquam et reprehenderit sequi nobis optio porro. Doloribus, vero vitae.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features -->
+        <section class="facts background-bg" data-image-src="{% static 'images/banner.jpg' %}" style="background-image: url({% static 'images/banner.jpg' %})">
+            <div class="overlay">
+                <div class="section-padding">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="item media">
+                                    <div class="item-icon mr-3">
+                                        <div class="item-details">
+                                            <h3 class="item-title text-center">
+                                                200+ hours Recorded Classes
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="item media">
+                                    <div class="item-icon mr-3">
+                                        <div class="item-details">
+                                            <h3 class="item-title text-center">
+                                                1000+ practice Questions
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="item media">
+                                    <div class="item-icon mr-3">
+                                        <div class="item-details">
+                                            <h3 class="item-title text-center">
+                                                Watch recorded Videos anytime
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="item media">
+                                    <div class="item-icon mr-3">
+                                        <div class="item-details">
+                                            <h3 class="item-title text-center">
+                                                In-depth analysis of the subject
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./ features -->
+
+        <!-- ./ wrapper -->
+{% endblock content %}
